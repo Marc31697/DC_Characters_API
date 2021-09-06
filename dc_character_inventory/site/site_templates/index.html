@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--Flask Flashed Messages to User-->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for cat,msg in messages %}
+                {% if cat == 'user-created'%}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+                    </div>
+
+                {% elif cat == 'auth-success' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+<div class="container"">
+    <div><img src="../../static/images/Justice-League-Movie-Fan-Art.jpg" alt="Instagram User Spidermonkey23 Justice League Artwork: No Copyright Intended" id="jleague">
+    <p style="font-size: 10px;">Artwork by Instagram user Spidermonkey23</p>
+    </div>
+    <!-- Header Section -->
+    <header class="row" id="head">
+        <div class="col-12 col-md-6">
+            <h2>Let's build the future of DC character collecting together!</h2>
+            <h5>Build up your collection of your favorite DC heroes and villains</h5>
+            <div>
+                <button class="btn btn-primary">View Our Docs</button>
+                <button class="btn btn-primary">Follow Our Instagram</button>
+            </div>
+        </div>
+
+        <!-- Header Image -->
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Start Middle Section -->
+    <section class="row">
+        <div class="col-12" id="middle-text">
+            <h2>Display Your Collection</h2>
+            <p>Prove why your collection is the best around!</p>
+        </div>
+    </section>
+    <!-- End of Middle Section -->
+
+    <!-- Collection of Features -->
+    <section class="row" id="features-section">
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/greenarrow.jpg" alt="Green Arrow Image" id="GA-img">
+            <p style="font-size: 10px;">Artwork by Artamata GG</p>
+            <h4>Post Your Collection</h4>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/black-canary.jpg" alt="Black Canary Image" id="BC-img">
+            <p style="font-size: 10px;">Artwork by Anna Marcano</p>
+            <h4>Join a Fantasy League</h4>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../../static/images/roy-harper.jpg" alt="Roy Harper Image" id="Roy-img">
+            <p style="font-size: 10px;">Unknown Artist</p>
+            <h4>Debate on Our Forums</h4>
+        </div>
+    </section>
+    <!-- End of Collection of Features -->
+
+    <!-- Community Section -->
+    <section class="row">
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/red-hood.jpg" alt="Red Hood Image" id="RH-image">
+        </div>
+        <div class="col-12 col-md-6">
+            <h4>Talk with other DC fanatics!</h4>
+            <p>
+                Talk with other like minded individuals who share your passion for DC comics and
+                go head to head in a fantasy comic league!
+            </p>
+            <div>
+                <button class="btn btn-primary">View On Github</button>
+                <button class="btn btn-primary">Sign Up Now!</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Community Section -->
+
+    <!-- Start of Footer -->
+    <footer class="row" id="footer">
+        <div class="col-2 col-md-2">
+            <img src="../../static/images/Joker.jpg" alt="Joker Image" id="footer-logo">
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Social Media</h4>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Info</h4>
+                <p>About Us</p>
+                <p>The Process</p>
+                <p>FAQ</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Help</h4>
+                <p>Contact Us</p>
+                <p>Feedback</p>
+                <p>Donate</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+</div>
+{% endblock content %}

@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(10, 10, 54);
+    color: white;
+}
+/* Nav Styles */
+.ct-nav{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li,ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: white;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: solid red;
+    border-radius: 11px;
+    margin-right: 0.2vw;
+}
+
+/* End of nav */
+
+/* Start of Hero/Header Section */
+#header-text{
+    padding: 2vw;
+}
+#head{
+    justify-content: center;
+    text-align: center;
+}
+/* End of Hero/Header Section */
+
+/* Start of Middle Section Styles */
+#middle-text{
+    text-align: center;
+    padding: 13vh;
+}
+/* End of Middle Section Styles */
+
+/* Start of Features Section Styles */
+/* #api-image, #graphql-image, #database-image{
+    margin-bottom: 10vh;
+} */
+
+#GA-img, #BC-img{
+    width: 65%;
+    height: 65%;
+}
+
+#Roy-img{
+    width: 75%;
+    height: 65%;
+}
+/* #features-section{
+    margin: 8vw;
+} */
+/* End of Features Section Styles */
+
+/* Start of Community Section Styles */
+#RH-image{
+    width: 75%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+/* End of Community Section Styles */
+
+/* Start of Footer Section Styles */
+#footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+#footer-logo{
+    width: 125%;
+    height: 87%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+#footer{
+    justify-content: center;
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
+/* End of Footer Section Styles */
+
+/* Profile Styles Section */
+.hero-section{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,rgba(30,115,172,0.7), rgba(142,57,153,0.6)), url(../images/teentitanss.jpg);
+    background-size: cover;
+    background-position: 35%;
+    -webkit-clip-path: polygon(0, 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    left: 20rem;
+    top: 10rem;
+    color: white;
+}
